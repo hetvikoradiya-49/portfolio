@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetvi | Graphic Designer</title>
+    <meta name="description" content="Freelance Designer helping cafes, brands & local businesses grow with aesthetic visuals">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Shapes / Sparkles Background -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Hetvi.</a>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary nav-btn">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <span class="badge">Hey, I'm Hetvi ✨</span>
+                <h1>I Turn Your Brand Into Something People <span>Notice—And Remember</span></h1>
+                <p>Freelance designer crafting scroll-stopping social content, menus, and visual identities for cafes and local businesses.</p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary magnetic-btn">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary magnetic-btn">Let's Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured" id="featured">
+        <div class="container section-container">
+            <div class="section-header fade-up">
+                <h2>Featured Projects</h2>
+                <p>A closer look at some of my favorite recent works.</p>
+            </div>
+            
+            <div class="featured-grid">
+                <!-- Project 1 -->
+                <div class="featured-card fade-up">
+                    <div class="image-wrapper">
+                        <!-- We use the video for the coffee website project -->
+                        <video class="project-media" autoplay muted loop playsinline>
+                            <source src="./assets/projects/coffee website.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Coffee Website</h3>
+                        <p>Web Design & Visuals</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="featured-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="image-wrapper">
+                        <!-- We use one of the posters -->
+                        <img src="./assets/projects/cafe poster (1).jpg" alt="Cafe Poster Design" class="project-media">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cafe Promotion Poster</h3>
+                        <p>Branding & Social Media</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="featured-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="image-wrapper">
+                        <img src="./assets/projects/shoes poster.png" alt="Shoes Poster Design" class="project-media">
+                    </div>
+                    <div class="project-info">
+                        <h3>Product Creatives: Shoes</h3>
+                        <p>Product Advertisement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Showcase Grid -->
+    <section class="showcase" id="work">
+        <div class="container section-container">
+            <div class="section-header fade-up">
+                <h2>Work Showcase</h2>
+                <div class="categories">
+                    <span class="cat-pill active" data-filter="all">All Work</span>
+                    <span class="cat-pill" data-filter="cafe">Café & Food ☕</span>
+                    <span class="cat-pill" data-filter="poster">Posters 🎯</span>
+                    <span class="cat-pill" data-filter="fashion">Fashion 👗</span>
+                    <span class="cat-pill" data-filter="product">Product 💄</span>
+                </div>
+            </div>
+
+            <div class="showcase-grid">
+                <div class="grid-item fade-up" data-category="cafe poster" data-title="Cafe Poster" data-description="<strong>Challenge:</strong> The cafe struggled to stand out on social media during promotions.<br><br><strong>Solution:</strong> Designed a visually rich poster utilizing warm coffee-tones and elegant typography.<br><br><strong>Result:</strong> Boosted weekend engagement and drove local foot traffic.">
+                    <img src="./assets/projects/cafe poster (1).jpg" alt="Cafe Poster">
+                </div>
+
+                <div class="grid-item fade-up" data-category="poster fashion" data-title="Avance Poster" data-description="<strong>Challenge:</strong> An apparel brand needed luxurious visuals to promote a premium collection.<br><br><strong>Solution:</strong> A high-end fashion poster design tailored with elegant, modern aesthetics.<br><br><strong>Result:</strong> Established brand authority and appealed to a higher-end demographic.">
+                    <img src="./assets/projects/avance poster - Copy.jpeg" alt="Avance Poster">
+                </div>
+
+                <div class="grid-item fade-up" data-category="product" data-title="Frame Design" data-description="<strong>Challenge:</strong> Digital products needed presentation contexts that didn't feel cheap.<br><br><strong>Solution:</strong> A beautifully crafted minimalist environment that elevates any product placed inside.<br><br><strong>Result:</strong> Higher perceived value and conversion rates on digital product stores.">
+                    <img src="./assets/projects/Frame 1 (1).jpg" alt="Design Frame">
+                </div>
+
+                <div class="grid-item fade-up" data-category="fashion product poster" data-title="Shoe Advertisement" data-description="<strong>Challenge:</strong> Generate immediate clicks and attention for a shoe release.<br><br><strong>Solution:</strong> A bold, trendy advertisement layout with high contrast and focus.<br><br><strong>Result:</strong> Maximum social media engagement, shares, and improved ad ROI.">
+                    <img src="./assets/projects/shoes poster.png" alt="Shoes Poster">
+                </div>
+
+                <!-- Web preview -->
+                <div class="grid-item fade-up wide-item" data-category="cafe" data-title="Coffee Shop Digital Experience" data-description="A complete digital website experience designed for a premium coffee shop, featuring smooth interactions and aesthetic visuals.">
+                    <video autoplay muted loop playsinline>
+                        <source src="./assets/projects/coffee website.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Step Process -->
+    <section class="process" id="process">
+        <div class="container section-container">
+            <div class="section-header fade-up">
+                <h2>How It Works</h2>
+                <p>3 simple steps to transform your brand's aesthetics.</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-card fade-up">
+                    <div class="step-num">01</div>
+                    <h4>Discovery Chat</h4>
+                    <p>We align on your brand's vision, goals, and visual aesthetic over a quick call or message.</p>
+                </div>
+                <div class="process-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="step-num">02</div>
+                    <h4>Design Magic</h4>
+                    <p>I build scroll-stopping visuals, menus, and branding collateral tailored to your specific audience.</p>
+                </div>
+                <div class="process-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="step-num">03</div>
+                    <h4>Growth & Handover</h4>
+                    <p>You receive all high-res files, ready to launch and dominate your local market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container section-container">
+            <div class="section-header fade-up">
+                <h2>Services I Offer</h2>
+                <p>Tailored design solutions for growing brands.</p>
+            </div>
+            <div class="services-wrapper fade-up">
+                <ul class="services-list">
+                    <li>
+                        <span class="service-icon">✨</span>
+                        Social Media Post Design
+                    </li>
+                    <li>
+                        <span class="service-icon">🎯</span>
+                        Poster & Advertisement Design
+                    </li>
+                    <li>
+                        <span class="service-icon">🍽️</span>
+                        Menu Design (Cafes & Restaurants)
+                    </li>
+                    <li>
+                        <span class="service-icon">💳</span>
+                        Business Card Design
+                    </li>
+                    <li>
+                        <span class="service-icon">💖</span>
+                        Branding Visuals
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container section-container">
+            <div class="section-header fade-up">
+                <h2>Investment Options</h2>
+                <p>Transparent and premium packages to scale your business identity.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Package 1: Basic -->
+                <div class="pricing-card fade-up">
+                    <h4>The Starter Boost</h4>
+                    <div class="price">₹2,499</div>
+                    <p class="price-desc">Perfect for new cafes testing the waters.</p>
+                    <ul class="pricing-features">
+                        <li>8 High-converting Social Posts</li>
+                        <li>1 Basic Menu Redesign</li>
+                        <li>2 Revisions Included</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Book Starter</a>
+                </div>
+
+                <!-- Package 2: Popular -->
+                <div class="pricing-card popular fade-up" style="transition-delay: 0.1s;">
+                    <div class="popular-badge">Most Popular 💎</div>
+                    <h4>The Brand Accelerate</h4>
+                    <div class="price">₹5,999</div>
+                    <p class="price-desc">Consistent, premium aesthetics for a full month.</p>
+                    <ul class="pricing-features">
+                        <li>20 Target Social Posts</li>
+                        <li>Complete Menu Redesign (Print & Digital)</li>
+                        <li>Storefront Signage Concept</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary w-100 magnetic-btn">Secure Your Slot</a>
+                </div>
+
+                <!-- Package 3: Premium -->
+                <div class="pricing-card fade-up" style="transition-delay: 0.2s;">
+                    <h4>The Premium Overhaul</h4>
+                    <div class="price">₹12,999</div>
+                    <p class="price-desc">For brands ready to completely dominate.</p>
+                    <ul class="pricing-features">
+                        <li>Full Brand Identity System</li>
+                        <li>30 Days of Content Generation</li>
+                        <li>Complete Print Collateral</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Apply for Elite</a>
+                </div>
+            </div>
+
+            <div class="alacarte-section fade-up mt-4 text-center">
+                <h3 class="mt-4" style="margin-bottom: 24px; font-family: var(--f-heading);">À La Carte Services</h3>
+                <ul class="alacarte-list" style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; padding: 0;">
+                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Social Media Content: <strong>₹399 / post</strong></li>
+                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Cafe Menu Design: <strong>₹999 – ₹1,999</strong></li>
+                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Posters & Flyers: <strong>₹39</strong></li>
+                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Logo & Brand ID: <strong>₹2,499+</strong></li>
+                </ul>
+            </div>
+
+            <p class="text-center custom-note fade-up mt-4" style="margin-top: 40px !important;">✨ Custom retainers available upon request.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq fade-up" style="max-width: 800px; margin: 0 auto 100px; padding: 0 24px;">
+        <h3 class="text-center" style="margin-bottom: 30px; font-family: var(--f-heading); font-size: 2rem;">Frequently Asked Questions</h3>
+        <details style="background: var(--c-white); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 15px; cursor: pointer; box-shadow: var(--shadow-soft);">
+            <summary style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between;">Do you offer revisions? <span>+</span></summary>
+            <p style="margin-top: 15px; color: var(--c-text-muted);">Yes! Every package includes a set number of revisions to ensure you are completely obsessed with the final aesthetics.</p>
+        </details>
+        <details style="background: var(--c-white); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 15px; cursor: pointer; box-shadow: var(--shadow-soft);">
+            <summary style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between;">How fast is the turnaround time? <span>+</span></summary>
+            <p style="margin-top: 15px; color: var(--c-text-muted);">Typically, individual designs take 2-3 days, while full packages take a week. Timelines are customized during our Discovery Chat!</p>
+        </details>
+    </section>
+
+    <!-- Tech & Tools -->
+    <section class="tools">
+        <div class="container section-container">
+            <div class="section-header fade-up">
+                <h2>My Toolkit</h2>
+            </div>
+            <div class="tools-grid fade-up">
+                <div class="tool-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="tool-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva">
+                    <span>Canva</span>
+                </div>
+                <div class="tool-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+                    <span>Adobe Photoshop</span>
+                </div>
+                <div class="tool-card">
+                    <div class="icon-text">UX</div>
+                    <span>UI/UX Basics</span>
+                </div>
+                <div class="tool-card">
+                    <div class="icon-text">✨</div>
+                    <span>Social Media Branding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container section-container">
+            <div class="about-content fade-up">
+                <div class="about-text">
+                    <h2>Meet the Designer</h2>
+                    <p class="large-text">“I’m Hetvi, a passionate creative designer who loves building aesthetic and impactful visuals for brands and local businesses.”</p>
+                    <p>My goal is to translate your brand's unique identity into scroll-stopping visuals. With a keen eye for modern, minimalist, and elegant design, I specialize in crafting digital experiences that resonate with your audience.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Added designer image reference here -->
+                    <img src="./assets/projects/profile.jpeg" alt="Hetvi - Graphic Designer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container section-container text-center fade-up">
+            <h2>Let’s make your brand stand out 💖</h2>
+            <p>Ready to elevate your visuals? Get in touch today.</p>
+            
+            <div class="contact-links mt-4">
+                <a href="https://www.instagram.com/creative_designbyme?igsh=ODFidGJqdXZna3Z3&utm_source=qr" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <div class="icon">📸</div>
+                    <span>Instagram</span>
+                </a>
+                <a href="mailto:hetvikoadiya49@gmail.com" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <div class="icon">✉️</div>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/919227025524" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <div class="icon">💬</div>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Hetvi. Crafted with ✨</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-media" id="modal-media-container">
+            </div>
+            <div class="modal-info">
+                <h3 id="modal-title">Project Title</h3>
+                <p id="modal-description">Project Description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/919227025524" class="sticky-contact" target="_blank" rel="noopener noreferrer">
+        💬 Let's Chat
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
