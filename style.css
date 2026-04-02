@@ -678,6 +678,15 @@ video {
     color: var(--c-accent-light);
 }
 
+.pricing-card.popular .btn-primary {
+    border: 1px solid var(--c-white);
+}
+
+.pricing-card.popular .btn-primary:hover {
+    background: var(--c-white);
+    color: var(--c-text-main);
+}
+
 /* Add-ons Section */
 .addons-grid {
     display: flex;
