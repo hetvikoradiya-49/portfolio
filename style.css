@@ -427,8 +427,10 @@ video {
 }
 
 /* We have an odd number of items, so we'll span one across using modern css masonry-like styling or grid styling */
-.wide-item {
+.grid-item.wide-item {
     grid-column: span 2;
+    aspect-ratio: 16 / 9;
+    max-height: 600px;
 }
 
 .grid-item {
@@ -455,8 +457,8 @@ video {
 }
 
 .grid-item.wide-item video {
-    height: auto;
-    max-height: 600px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     padding: 0;
 }
