@@ -55,6 +55,30 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    // Pricing Tab Logic
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.pricing-tab-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetTab = btn.getAttribute('data-tab');
+
+            // Update active state of buttons
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update visible content
+            tabContents.forEach(content => {
+                const contentId = content.id;
+                if (contentId === `${targetTab}-packages`) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        });
+    });
+
     // Category Filter Filtering Logic
     const pills = document.querySelectorAll('.cat-pill');
     const gridItems = document.querySelectorAll('.grid-item');

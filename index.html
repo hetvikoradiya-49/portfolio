@@ -184,28 +184,24 @@
                 <p>Tailored design solutions for growing brands.</p>
             </div>
             <div class="services-wrapper fade-up">
-                <ul class="services-list">
-                    <li>
-                        <span class="service-icon">✨</span>
-                        Social Media Post Design
-                    </li>
-                    <li>
-                        <span class="service-icon">🎯</span>
-                        Poster & Advertisement Design
-                    </li>
-                    <li>
-                        <span class="service-icon">🍽️</span>
-                        Menu Design (Cafes & Restaurants)
-                    </li>
-                    <li>
-                        <span class="service-icon">💳</span>
-                        Business Card Design
-                    </li>
-                    <li>
-                        <span class="service-icon">💖</span>
-                        Branding Visuals
-                    </li>
-                </ul>
+                <div class="services-grid">
+                    <div class="service-category">
+                        <h3>Design</h3>
+                        <ul class="services-list">
+                            <li><span class="service-icon">🎨</span> Poster Design — <strong>₹499+</strong></li>
+                            <li><span class="service-icon">📄</span> Flyer Design — <strong>₹799+</strong></li>
+                            <li><span class="service-icon">📖</span> Brochure Design — <strong>₹1,999+</strong></li>
+                            <li><span class="service-icon">📱</span> UI Design — <strong>₹2,999+</strong></li>
+                        </ul>
+                    </div>
+                    <div class="service-category">
+                        <h3>Branding</h3>
+                        <ul class="services-list">
+                            <li><span class="service-icon">🍽️</span> Menu Design — <strong>₹999+</strong></li>
+                            <li class="service-highlight">✨ Custom visual identity for your brand</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -216,61 +212,170 @@
             <div class="section-header fade-up">
                 <h2>Investment Options</h2>
                 <p>Transparent and premium packages to scale your business identity.</p>
+                
+                <div class="pricing-tabs mt-4">
+                    <button class="tab-btn active" data-tab="design">Branding & Web</button>
+                    <button class="tab-btn" data-tab="social">Social Media Mgmt</button>
+                </div>
             </div>
 
-            <div class="pricing-grid">
-                <!-- Package 1: Basic -->
-                <div class="pricing-card fade-up">
-                    <h4>The Starter Boost</h4>
-                    <div class="price">₹2,499</div>
-                    <p class="price-desc">Perfect for new cafes testing the waters.</p>
-                    <ul class="pricing-features">
-                        <li>8 High-converting Social Posts</li>
-                        <li>1 Basic Menu Redesign</li>
-                        <li>2 Revisions Included</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Book Starter</a>
-                </div>
+            <div class="pricing-tab-content active" id="design-packages">
+                <div class="pricing-grid">
+                    <!-- Package 1: Starter -->
+                    <div class="pricing-card fade-up">
+                        <h4>Starter Package</h4>
+                        <div class="price">₹2,999</div>
+                        <p class="price-desc">Ideal for launching your initial brand presence.</p>
+                        <ul class="pricing-features">
+                            <li><span class="check">✔</span> Menu Design (1 Page)</li>
+                            <li><span class="check">✔</span> 1 Poster / Offer Banner</li>
+                            <li><span class="check">✔</span> Instagram Post (2 designs)</li>
+                            <li><span class="check">✔</span> 2 Revisions</li>
+                            <li><span class="check">✔</span> Delivery: 2–3 Days</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Choose Starter</a>
+                    </div>
 
-                <!-- Package 2: Popular -->
-                <div class="pricing-card popular fade-up" style="transition-delay: 0.1s;">
-                    <div class="popular-badge">Most Popular 💎</div>
-                    <h4>The Brand Accelerate</h4>
-                    <div class="price">₹5,999</div>
-                    <p class="price-desc">Consistent, premium aesthetics for a full month.</p>
-                    <ul class="pricing-features">
-                        <li>20 Target Social Posts</li>
-                        <li>Complete Menu Redesign (Print & Digital)</li>
-                        <li>Storefront Signage Concept</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary w-100 magnetic-btn">Secure Your Slot</a>
-                </div>
+                    <!-- Package 2: Growth (Popular) -->
+                    <div class="pricing-card popular fade-up" style="transition-delay: 0.1s;">
+                        <div class="popular-badge">Most Popular 🚀</div>
+                        <h4>Growth Package</h4>
+                        <div class="price">₹6,999</div>
+                        <p class="price-desc">Our most effective kit for scaling your business.</p>
+                        <ul class="pricing-features">
+                            <li><span class="check">✔</span> Menu Design (Full)</li>
+                            <li><span class="check">✔</span> 3 Posters / Promotional Designs</li>
+                            <li><span class="check">✔</span> 5 Instagram Posts</li>
+                            <li><span class="check">✔</span> Basic Branding (Colors/Fonts)</li>
+                            <li><span class="check">✔</span> 5 Revisions</li>
+                            <li><span class="check">✔</span> Delivery: 3–5 Days</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100 magnetic-btn">Go Growth</a>
+                    </div>
 
-                <!-- Package 3: Premium -->
-                <div class="pricing-card fade-up" style="transition-delay: 0.2s;">
-                    <h4>The Premium Overhaul</h4>
-                    <div class="price">₹12,999</div>
-                    <p class="price-desc">For brands ready to completely dominate.</p>
-                    <ul class="pricing-features">
-                        <li>Full Brand Identity System</li>
-                        <li>30 Days of Content Generation</li>
-                        <li>Complete Print Collateral</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Apply for Elite</a>
+                    <!-- Package 3: Premium Branding -->
+                    <div class="pricing-card fade-up" style="transition-delay: 0.2s;">
+                        <h4>Premium Package</h4>
+                        <div class="price">₹14,999</div>
+                        <p class="price-desc">Complete dominant identity overhaul.</p>
+                        <ul class="pricing-features">
+                            <li><span class="check">✔</span> Full Menu (Premium Layout)</li>
+                            <li><span class="check">✔</span> 6 Posters / Ads</li>
+                            <li><span class="check">✔</span> 10 Instagram Posts</li>
+                            <li><span class="check">✔</span> Complete Branding Kit (+Logo)</li>
+                            <li><span class="check">✔</span> Unlimited Minor Edits</li>
+                            <li><span class="check">✔</span> Priority Delivery + Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Get Premium</a>
+                    </div>
+
+                    <!-- Package 4: Website Package -->
+                    <div class="pricing-card fade-up" style="transition-delay: 0.3s;">
+                        <h4>Website Package</h4>
+                        <div class="price">₹4,999+</div>
+                        <p class="price-desc">Modern digital home for your brand.</p>
+                        <ul class="pricing-features">
+                            <li><span class="check">✔</span> Responsive Web Design</li>
+                            <li><span class="check">✔</span> Menu Showcase Section</li>
+                            <li><span class="check">✔</span> Gallery / Food Photos</li>
+                            <li><span class="check">✔</span> WhatsApp & Map Integration</li>
+                            <li><span class="check">✔</span> Basic SEO Setup</li>
+                            <li><span class="check">✔</span> Cost: ₹4,999 – ₹19,999</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Inquire Web</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-tab-content" id="social-packages">
+                <div class="pricing-grid">
+                    <!-- Basic Social -->
+                    <div class="pricing-card fade-up">
+                        <h4>Basic Social</h4>
+                        <div class="price">₹1,999<span>/mo</span></div>
+                        <p class="price-desc">Essential monthly feed maintenance.</p>
+                        <ul class="pricing-features">
+                            <li><span class="check">✔</span> 8 Posts (Static Designs)</li>
+                            <li><span class="check">✔</span> 2 Curated Stories</li>
+                            <li><span class="check">✔</span> Basic Captions Included</li>
+                            <li><span class="check">✔</span> 2 Rounds of Revisions</li>
+                            <li><span class="check">✔</span> Delivery: 2-3 per week</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Start Basic</a>
+                    </div>
+
+                    <!-- Standard Social (Popular) -->
+                    <div class="pricing-card popular fade-up" style="transition-delay: 0.1s;">
+                        <div class="popular-badge">Most Value ⭐</div>
+                        <h4>Standard Social</h4>
+                        <div class="price">₹5,999<span>/mo</span></div>
+                        <p class="price-desc">Strategic growth with high-quality content.</p>
+                        <ul class="pricing-features">
+                            <li><span class="check">✔</span> 12–15 Posts (Static + Carousels)</li>
+                            <li><span class="check">✔</span> 5 Engaged Stories</li>
+                            <li><span class="check">✔</span> Professional Caption Writing</li>
+                            <li><span class="check">✔</span> Hashtag & Growth Suggestions</li>
+                            <li><span class="check">✔</span> 3 Rounds of Revisions</li>
+                            <li><span class="check">✔</span> Branding Consistency Check</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100 magnetic-btn">Grow Monthly</a>
+                    </div>
+
+                    <!-- Premium Social -->
+                    <div class="pricing-card fade-up" style="transition-delay: 0.2s;">
+                        <h4>Premium Social</h4>
+                        <div class="price">₹14,999<span>/mo</span></div>
+                        <p class="price-desc">Total social dominance & strategy.</p>
+                        <ul class="pricing-features">
+                            <li><span class="check">✔</span> 20–25 Posts (Static/Carousel/Ads)</li>
+                            <li><span class="check">✔</span> 10+ Daily Interactive Stories</li>
+                            <li><span class="check">✔</span> Full Content Planning & Map</li>
+                            <li><span class="check">✔</span> Advanced Strategy + Copy</li>
+                            <li><span class="check">✔</span> Unlimited Revisions (Within Scope)</li>
+                            <li><span class="check">✔</span> Priority Support & Delivery</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline w-100 magnetic-btn">Experience Elite</a>
+                    </div>
                 </div>
             </div>
 
             <div class="alacarte-section fade-up mt-4 text-center">
-                <h3 class="mt-4" style="margin-bottom: 24px; font-family: var(--f-heading);">À La Carte Services</h3>
-                <ul class="alacarte-list" style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; padding: 0;">
-                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Social Media Content: <strong>₹399 / post</strong></li>
-                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Cafe Menu Design: <strong>₹999 – ₹1,999</strong></li>
-                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Posters & Flyers: <strong>₹399</strong></li>
-                    <li style="background: var(--c-white); color: var(--c-text-main); padding: 16px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-soft);">Logo & Brand ID: <strong>₹2,499+</strong></li>
-                </ul>
+                <h3 class="mt-4" style="margin-bottom: 24px; font-family: var(--f-heading); color: var(--c-text-main);">➕ Add-ons & Extra Services</h3>
+                <div class="addons-grid">
+                    <div class="addon-pill">Extra Post: <strong>₹300 – ₹800</strong></div>
+                    <div class="addon-pill">Reel Editing: <strong>₹500 – ₹2,000</strong></div>
+                    <div class="addon-pill">Ad Creatives: <strong>₹500 – ₹1,500</strong></div>
+                    <div class="addon-pill">Reel / Story: <strong>₹500</strong></div>
+                    <div class="addon-pill">Urgent Delivery: <strong>+₹1,000</strong></div>
+                    <div class="addon-pill">Source File: <strong>₹500</strong></div>
+                </div>
             </div>
 
             <p class="text-center custom-note fade-up mt-4" style="margin-top: 40px !important;">✨ Custom retainers available upon request.</p>
+        </div>
+    </section>
+
+    <!-- Terms & Conditions -->
+    <section class="terms" id="terms">
+        <div class="container section-container fade-up">
+            <div class="section-header">
+                <h2>📜 Terms & Conditions</h2>
+                <p>Standard guidelines for our collaboration.</p>
+            </div>
+            <div class="terms-grid">
+                <div class="terms-card">
+                    <ul class="terms-list">
+                        <li><span class="icon">💎</span> 50% advance payment required to start.</li>
+                        <li><span class="icon">🔄</span> 2–3 revisions included (based on package).</li>
+                        <li><span class="icon">⚠️</span> Extra revisions beyond package will be charged.</li>
+                        <li><span class="icon">🚫</span> No refund once work has been started.</li>
+                        <li><span class="icon">⏳</span> Delivery time depends on project scope.</li>
+                        <li><span class="icon">📝</span> Client must provide final content.</li>
+                        <li><span class="icon">🛠️</span> Minor edits included; major changes chargeable.</li>
+                        <li><span class="icon">📥</span> Final branding files delivered after full payment.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -279,11 +384,11 @@
         <h3 class="text-center" style="margin-bottom: 30px; font-family: var(--f-heading); font-size: 2rem;">Frequently Asked Questions</h3>
         <details style="background: var(--c-white); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 15px; cursor: pointer; box-shadow: var(--shadow-soft);">
             <summary style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between;">Do you offer revisions? <span>+</span></summary>
-            <p style="margin-top: 15px; color: var(--c-text-muted);">Yes! Every package includes a set number of revisions to ensure you are completely obsessed with the final aesthetics.</p>
+            <p style="margin-top: 15px; color: var(--c-text-muted);">Yes! Every package includes a set number of revisions (2-5 depending on package) to ensure you are completely obsessed with the final aesthetics.</p>
         </details>
         <details style="background: var(--c-white); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 15px; cursor: pointer; box-shadow: var(--shadow-soft);">
             <summary style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between;">How fast is the turnaround time? <span>+</span></summary>
-            <p style="margin-top: 15px; color: var(--c-text-muted);">Typically, individual designs take 2-3 days, while full packages take a week. Timelines are customized during our Discovery Chat!</p>
+            <p style="margin-top: 15px; color: var(--c-text-muted);">Typically, individual designs take 2-3 days, while full packages take 3-5 days. Priority delivery is available for urgent projects!</p>
         </details>
     </section>
 
