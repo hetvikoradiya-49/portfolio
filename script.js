@@ -180,4 +180,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // === View More Projects Toggle ===
+    const viewMoreBtn = document.getElementById('view-more-btn');
+    const showcaseSection = document.getElementById('work');
+
+    if (viewMoreBtn && showcaseSection) {
+        viewMoreBtn.addEventListener('click', () => {
+            const isOpen = showcaseSection.classList.contains('section-visible');
+
+            if (!isOpen) {
+                // Reveal the section
+                showcaseSection.classList.add('section-visible');
+                viewMoreBtn.classList.add('is-open');
+                viewMoreBtn.querySelector('.btn-text').textContent = 'Show Less Projects';
+
+                // Smooth scroll to the showcase after a short delay for transition
+                setTimeout(() => {
+                    showcaseSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+
+                // Trigger fade-up animations for newly visible elements
+                setTimeout(() => {
+                    const newFadeEls = showcaseSection.querySelectorAll('.fade-up:not(.visible)');
+                    newFadeEls.forEach(el => el.classList.add('visible'));
+                }, 400);
+            } else {
+                // Hide the section
+                showcaseSection.classList.remove('section-visible');
+                viewMoreBtn.classList.remove('is-open');
+                viewMoreBtn.querySelector('.btn-text').textContent = 'View More Projects';
+
+                // Scroll back up to the featured section
+                document.getElementById('featured').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+
 });
